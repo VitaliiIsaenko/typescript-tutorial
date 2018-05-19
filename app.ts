@@ -40,8 +40,8 @@ function subtract (a: number, b: number): number {
 let op: (x:number, y:number) => number;
  
 op = sum;
-el.innerHTML += " {op(2,5)} is the result of addition";
+el.innerHTML += ` ${op(2,5)} is the result of addition`;
  
 op = subtract;
-el.innerHTML += " {op(4,2)} is the result of substraction";
+el.innerHTML += ` ${op(4,2)} is the result of substraction`;
 

@@ -1,5 +1,5 @@
 var el = this.document.getElementById("content");
-var User = /** @class */ (function () {
+var User = (function () {
     function User(_name, _age) {
         this.name = _name;
         this.age = _age;
@@ -30,6 +30,7 @@ function subtract(a, b) {
 ;
 var op;
 op = sum;
-console.log(op(2, 4));
+el.innerHTML += " " + op(2, 5) + " is the result of addition";
 op = subtract;
-console.log(op(6, 4));
+el.innerHTML += " " + op(4, 2) + " is the result of substraction";
+//# sourceMappingURL=app.js.map
