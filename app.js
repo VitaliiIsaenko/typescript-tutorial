@@ -9,11 +9,15 @@ var User = (function () {
 var tom = new User("Том", 29);
 el.innerHTML = "Имя: " + tom.name + " возраст: " + tom.age;
 function add(first, second) {
+    var result;
     if (typeof (first) === "string" && typeof (second) === "string") {
-        return first + second;
+        result = first + second;
     }
     else {
-        return first + second;
+        result = first + second;
     }
+    return result;
 }
+el.innerHTML += add(5, 6);
+el.innerHTML += " " + add("4", "5");
 //# sourceMappingURL=app.js.map
