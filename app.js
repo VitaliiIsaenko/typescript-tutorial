@@ -1,5 +1,5 @@
 var el = this.document.getElementById("content");
-var User = (function () {
+var User = /** @class */ (function () {
     function User(_name, _age) {
         this.name = _name;
         this.age = _age;
@@ -33,4 +33,9 @@ op = sum;
 el.innerHTML += " " + op(2, 5) + " is the result of addition";
 op = subtract;
 el.innerHTML += " " + op(4, 2) + " is the result of substraction";
-//# sourceMappingURL=app.js.map
+function mathOp(x, y, operation) {
+    var result = operation(x, y);
+    return result;
+}
+el.innerHTML += "<br/> " + mathOp(5, 5, function (first, second) { return first * second; }) + " ";
+el.innerHTML += " " + mathOp(6, 5, op) + " ";
