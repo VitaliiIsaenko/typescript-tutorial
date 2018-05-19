@@ -1,13 +1,13 @@
 var el = this.document.getElementById("content");
-var User = (function () {
+var User = /** @class */ (function () {
     function User(_name, _age) {
         this.name = _name;
         this.age = _age;
     }
     return User;
 }());
-var tom = new User("Том", 29);
-el.innerHTML = "Имя: " + tom.name + " возраст: " + tom.age;
+var tom = new User("Tom", 29);
+el.innerHTML = "Name: " + tom.name + " Age: " + tom.age;
 function add(first, second) {
     var result;
     if (typeof (first) === "string" && typeof (second) === "string") {
@@ -18,6 +18,18 @@ function add(first, second) {
     }
     return result;
 }
-el.innerHTML += add(5, 6);
+el.innerHTML += " " + add(5, 6);
 el.innerHTML += " " + add("4", "5");
-//# sourceMappingURL=app.js.map
+function sum(x, y) {
+    return x + y;
+}
+;
+function subtract(a, b) {
+    return a - b;
+}
+;
+var op;
+op = sum;
+console.log(op(2, 4));
+op = subtract;
+console.log(op(6, 4));

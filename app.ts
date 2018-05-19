@@ -9,8 +9,8 @@ class User {
         this.age = _age;
     }
 }
-var tom: User = new User("Том", 29);
-el.innerHTML = "Имя: " + tom.name + " возраст: " + tom.age;
+var tom: User = new User("Tom", 29);
+el.innerHTML = "Name: " + tom.name + " Age: " + tom.age;
 
 
 function add(first: number, second: number): number;
@@ -40,7 +40,8 @@ function subtract (a: number, b: number): number {
 let op: (x:number, y:number) => number;
  
 op = sum;
-console.log(op(2, 4));  // 6
+el.innerHTML += " {op(2,5)} is the result of addition";
  
 op = subtract;
-console.log(op(6, 4));  // 2
+el.innerHTML += " {op(4,2)} is the result of substraction";
+
